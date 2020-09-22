@@ -1,0 +1,187 @@
+<div class="boxen">
+  <ul>
+
+    <li *ngFor="let l of lagarray">
+      <a routerLink="/detail/{{l.id}}">
+        <div class="smallbox">
+        <h1>{{l.Ranking}}
+          {{l.Namn}}</h1>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+  <br/>
+  <div class="laggtilllag">
+  <form #Lagformular="ngForm" (ngSubmit)="onSubmit(Lagformular)">
+    <label>Namn</label><br/>
+    <input
+      type="text"
+      [(ngModel)]="nyttlag.Namn"
+      name="Namn"
+      #lagNamn="ngModel"
+      required
+      minlength="3"
+      [ngClass]="{'error' : lagNamn.errors && lagNamn.touched}"
+    />
+    <span *ngIf="(lagNamn.dirty || lagNamn.touched) && lagNamn.hasError('required')"
+          class="errorText">
+    * Ett lag behöver ett namn!
+    </span>
+    <span *ngIf="(lagNamn.dirty || lagNamn.touched) && lagNamn.hasError('minlength')"
+          class="errorText">
+    * Namnet måste vara minst tre bokstäver eller siffror.
+    </span>
+    <br/><br/>
+    <label>Land</label><br/>
+    <input
+      type="text"
+      [(ngModel)]="nyttlag.Land"
+      name="Land"
+      #lagLand="ngModel"
+      required
+      minlength="3"
+      [ngClass]="{'error' : lagLand.errors && lagLand.touched}"
+    />
+    <span *ngIf="(lagLand.dirty || lagLand.touched) && lagLand.hasError('required')"
+          class="errorText">
+    * Ett lag behöver ett land!
+    </span>
+    <span *ngIf="(lagLand.dirty || lagLand.touched) && lagLand.hasError('minlength')"
+          class="errorText">
+    * Laandet måste vara minst tre bokstäver långt.
+    </span>
+    <br/><br/>
+
+
+    <label>Ranking</label><br/>
+    <input
+      type="text"
+      [(ngModel)]="nyttlag.Ranking"
+      name="Ranking"
+      #Ranking="ngModel"
+      required
+      minlength="1"
+      [ngClass]="{'error' : Ranking.errors && Ranking.touched}"
+    />
+    <span *ngIf="(Ranking.dirty || Ranking.touched) && Ranking.hasError('required')"
+          class="errorText">
+    * Ett lag behöver en ranking!
+    </span>
+    <span *ngIf="(Ranking.dirty || Ranking.touched) && Ranking.hasError('minlength')"
+          class="errorText">
+    * minst 1 siffra.
+    </span>
+    <br/><br/>
+
+    <label>Spelare 1</label><br/>
+    <input
+      type="text"
+      [(ngModel)]="nyttlag.Spelare1"
+      name="Spelare1"
+      #Spelare1="ngModel"
+      required
+      minlength="2"
+      [ngClass]="{'error' : Spelare1.errors && Spelare1.touched}"
+    />
+    <span *ngIf="(Spelare1.dirty || Spelare1.touched) && Spelare1.hasError('required')"
+          class="errorText">
+    * Ett lag behöver en spelare!
+    </span>
+    <span *ngIf="(Spelare1.dirty || Spelare1.touched) && Spelare1.hasError('minlength')"
+          class="errorText">
+    * Spelaren måste vara minst tre bokstäver långt.
+    </span>
+    <br/><br/>
+
+
+
+
+    <label>Spelare 2</label><br/>
+    <input
+      type="text"
+      [(ngModel)]="nyttlag.Spelare2"
+      name="Spelare2"
+      #Spelare2="ngModel"
+      required
+      minlength="2"
+      [ngClass]="{'error' : Spelare2.errors && Spelare2.touched}"
+    />
+    <span *ngIf="(Spelare2.dirty || Spelare2.touched) && Spelare2.hasError('required')"
+          class="errorText">
+    * Ett lag behöver en spelare!
+    </span>
+    <span *ngIf="(Spelare2.dirty || Spelare2.touched) && Spelare2.hasError('minlength')"
+          class="errorText">
+    * Spelaren måste vara minst tre bokstäver långt.
+    </span>
+    <br/><br/>
+
+
+    <label>Spelare 3</label><br/>
+    <input
+      type="text"
+      [(ngModel)]="nyttlag.Spelare3"
+      name="Spelare3"
+      #Spelare3="ngModel"
+      required
+      minlength="2"
+      [ngClass]="{'error' : Spelare3.errors && Spelare3.touched}"
+    />
+    <span *ngIf="(Spelare3.dirty || Spelare3.touched) && Spelare3.hasError('required')"
+          class="errorText">
+    * Ett lag behöver en spelare!
+    </span>
+    <span *ngIf="(Spelare3.dirty || Spelare3.touched) && Spelare3.hasError('minlength')"
+          class="errorText">
+    * Spelaren måste vara minst tre bokstäver långt.
+    </span>
+    <br/><br/>
+
+    <label>Spelare 4</label><br/>
+    <input
+      type="text"
+      [(ngModel)]="nyttlag.Spelare4"
+      name="Spelare4"
+      #Spelare4="ngModel"
+      required
+      minlength="2"
+      [ngClass]="{'error' : Spelare4.errors && Spelare4.touched}"
+    />
+    <span *ngIf="(Spelare4.dirty || Spelare4.touched) && Spelare4.hasError('required')"
+          class="errorText">
+    * Ett lag behöver en spelare!
+    </span>
+    <span *ngIf="(Spelare4.dirty || Spelare4.touched) && Spelare4.hasError('minlength')"
+          class="errorText">
+    * Spelaren måste vara minst tre bokstäver långt.
+    </span>
+    <br/><br/>
+
+    <label>Spelare 5</label><br/>
+    <input
+      type="text"
+      [(ngModel)]="nyttlag.Spelare5"
+      name="Spelare5"
+      #Spelare5="ngModel"
+      required
+      minlength="2"
+      [ngClass]="{'error' : Spelare5.errors && Spelare5.touched}"
+    />
+    <span *ngIf="(Spelare5.dirty || Spelare5.touched) && Spelare5.hasError('required')"
+          class="errorText">
+    * Ett lag behöver en spelare!
+    </span>
+    <span *ngIf="(Spelare5.dirty || Spelare5.touched) && Spelare5.hasError('minlength')"
+          class="errorText">
+    * Spelaren måste vara minst tre bokstäver långt.
+    </span>
+    <br/><br/>
+
+
+    <br/><br/>
+    <button>Lägg till lag</button>
+  </form>
+  </div>
+</div>
+

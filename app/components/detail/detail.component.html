@@ -1,0 +1,13 @@
+<div class="boxen">
+
+<h1>Details</h1>
+
+<div *ngIf= "Lag" class="info">
+  <strong> Name: </strong> <br/>{{ Lag.Namn }} <br/>
+  <strong> Ranking: </strong> <br/>{{ Lag.Ranking }} <br/>
+    <strong> Land: </strong> <br/>{{ Lag.Land}} <br/>
+      <strong> Spelare : </strong> <br/>{{ Lag.Spelare1 }}, {{ Lag.Spelare2 }}, {{ Lag.Spelare3 }}, {{ Lag.Spelare4 }}, {{ Lag.Spelare5 }} <br/> <br/> <br/>
+  <button class="tabortknapp" type="button" (click)="deleteLag()">Ta bort lag</button>
+</div>
+
+</div>

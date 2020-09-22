@@ -1,0 +1,59 @@
+/** FOOTER */
+
+#footer-wrapper
+
+{
+
+  overflow: hidden;
+
+  padding: 35px 0px;
+
+  background: #444444;
+
+  border-top: 1px solid #404040;
+
+  border-bottom: 1px solid #404040;
+
+  font-family: 'Archivo Narrow', sans-serif;
+
+
+
+}
+
+#footer
+
+{
+
+  overflow: hidden;
+
+  color: #B1B1B1;
+
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+
+
+#footer #fbox1
+
+{
+
+  float: left;
+
+  width: 700px;
+
+  margin-left: 20px;
+
+  font-family: 'Archivo Narrow', sans-serif;
+
+}
+
+
+#footer a
+
+{
+  color: white;
+
+  text-decoration: none;
+
+  font-family: 'Archivo Narrow', sans-serif;
+}

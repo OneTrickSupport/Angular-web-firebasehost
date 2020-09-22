@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Serif', serif;
+}
+h1{
+  margin: 5pt;
+  padding: 5pt;
+}
+h2{
+  margin: 2pt;
+  padding: 2pt;
+}
+h3{
+  margin: 2pt;
+  padding: 2pt;
+}
+
+

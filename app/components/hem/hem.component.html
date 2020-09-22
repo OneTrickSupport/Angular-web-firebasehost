@@ -1,0 +1,18 @@
+<div class="boxen">
+  <h1>News!</h1>
+  <h2>Danska Astralis tar hem deras tredje major i rad! Katowice 2019!</h2>
+
+  <img src="../assets/astralis.jpg" alt="astarlis">
+
+  <br>
+  <h2>Kommer olofmeister och Rain att lämna Faze clan?</h2>
+  <h3>Spekulationer om övergång till svenska NIP</h3>
+
+  <img class="profilbild" src="../assets/Rain.jpeg" alt="rain">
+  <img class="profilbild" src="../assets/fnatic_olofmaister.jpg" alt="olof">
+
+  <div *ngIf="isLoggedIn"><a routerLink="/Hem"(click)="onLogoutClick()">Logout
+    ,→ {{ loggedInUser }}</a><br/></div>
+  <div *ngIf="!isLoggedIn"><a routerLink="/login">Login</a><br/> </div>
+
+</div>

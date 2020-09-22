@@ -1,0 +1,22 @@
+.boxen {
+  margin-right: auto;
+  margin-left: auto;
+  width: 900px;
+  background-color: #f3f3f3;
+  min-height: 600px;
+  padding: 14pt;
+  border: #B1B1B1 solid 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3pt;
+}
+
+.ops{
+  text-align: center;
+}
+
+.opsbild{
+  max-height: 500px;
+  border: #B1B1B1 solid 1px;
+  border-radius: 3pt;
+}

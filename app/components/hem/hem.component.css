@@ -1,0 +1,23 @@
+.bild{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.boxen {
+  margin-right: auto;
+  margin-left: auto;
+  width: 900px;
+  background-color: #f3f3f3;
+  text-align: center;
+  border: #B1B1B1 solid 1px;
+  border-radius: 3pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.profilbild{
+  width: 300px;
+}
+
